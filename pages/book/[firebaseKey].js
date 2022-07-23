@@ -22,7 +22,7 @@ export default function ViewBook() {
       </div>
       <div className="text-white ms-5 details">
         <h5>
-          {bookDetails.title} by {bookDetails.authorObject?.first_name} {bookDetails.authorObject?.last_name}
+          {bookDetails.title} by {bookDetails.authorObject?.firstName} {bookDetails.authorObject?.lastName}
           {bookDetails.authorObject?.favorite ? ' 🤍' : ''}
         </h5>
         Author Email: <a href={`mailto:${bookDetails.authorObject?.email}`}>{bookDetails.authorObject?.email}</a>

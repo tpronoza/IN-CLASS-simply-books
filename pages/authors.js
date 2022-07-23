@@ -14,10 +14,10 @@ export default function Authors() {
   useEffect(() => {
     getAllTheAuthors();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [user.uid]);
 
   return (
-    <div>
+    <div className="d-flex flex-wrap">
       {authors.map((authorObj) => (
         <AuthorCard key={authorObj.firebaseKey} authorObj={authorObj} onUpdate={getAllTheAuthors} />
       ))}
