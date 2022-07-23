@@ -12,7 +12,7 @@ export default function EditBook() {
   // TODO: make a call to the API to get the book data
   useEffect(() => {
     getSingleBook(firebaseKey).then(setEditItem);
-  }, [firebaseKey]);
+  }, [firebaseKey, router]);
 
   // TODO: pass object to form
   return (<BookForm obj={editItem} />);

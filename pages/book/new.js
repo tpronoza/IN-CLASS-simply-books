@@ -6,7 +6,7 @@ import BookForm from '../../components/forms/BookForm';
 export default function AddBook() {
   return (
     <div>
-      <BookForm />New
+      <BookForm />New Book
     </div>
   );
 }
